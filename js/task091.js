@@ -10,6 +10,32 @@ So the function should return 26 because the sum of the minimums is 1 + 5 + 20 =
 
 Note: You will always be given a non-empty list containing positive values.*/
 
+// function sumOfMinimums(arr) {
+//   const minValues = arr.map(function (a) {
+//     return Math.min(...a)
+//   })
+
+//   return minValues.reduce(function (acc, val) {
+//     return acc + val
+//   }, 0)
+// }
+
 function sumOfMinimums(arr) {
-  // your code here
+  return arr.reduce((p, c) => p + Math.min(...c), 0)
 }
+
+console.log(
+  sumOfMinimums([
+    [7, 9, 8, 6, 2],
+    [6, 3, 5, 4, 3],
+    [5, 8, 7, 4, 5],
+  ]),
+) // 9
+console.log(
+  sumOfMinimums([
+    [11, 12, 14, 54],
+    [67, 89, 90, 56],
+    [7, 9, 4, 3],
+    [9, 8, 6, 7],
+  ]),
+) // 76
