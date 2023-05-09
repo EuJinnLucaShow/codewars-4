@@ -1,27 +1,17 @@
-function getDrinkByProfession(param) {
-  const newParam = param.toLowerCase()
-  let strOut = ''
-  switch (newParam) {
-    case 'jabroni':
-      strOut = 'Patron Tequila'
-      break
-    case 'school counselor':
-      strOut = 'Anything with Alcohol'
-      break
-    case 'programmer':
-      strOut = 'Hipster Craft Beer'
-      break
-    case 'bike gang member':
-      strOut = 'Moonshine'
-      break
-    case 'politician':
-      strOut = 'Your tax dollars'
-      break
-    case 'rapper':
-      strOut = 'Cristal'
-      break
-    default:
-      strOut = 'Beer'
-  }
-  return strOut
-}
+const findAverage = nums => nums.reduce((a, b) => a + b) / nums.length
+
+/*Find Mean
+Find the mean (average) of a list of numbers in an array.
+
+Information
+To find the mean (average) of a set of numbers add all of the numbers together and divide by the number of values in the list.
+
+For an example list of 1, 3, 5, 7
+
+1. Add all of the numbers
+
+1+3+5+7 = 16
+2. Divide by the number of values in the list. In this example there are 4 numbers in the list.
+
+16/4 = 4
+3. The mean (or average) of this list is 4*/
