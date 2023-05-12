@@ -16,11 +16,18 @@ Input may be any positive or negative integer (including 0).
 
 You can assume that all inputs are valid integers.*/
 
-function roundToNext5(num) {
-  let remainder = num % 5
-  if (remainder < 2.5) {
-    return num - remainder
-  } else {
-    return num + (5 - remainder)
-  }
+function roundToNext5(n) {
+  return Math.ceil(n / 5) * 5
 }
+
+console.log(roundToNext5(0)) // output: 0
+console.log(roundToNext5(2)) // output: 5
+console.log(roundToNext5(3)) // output: 5
+console.log(roundToNext5(12)) // output: 15
+console.log(roundToNext5(21)) // output: 25
+console.log(roundToNext5(30)) // output: 30
+console.log(roundToNext5(-2)) // output: 0
+console.log(roundToNext5(-5)) // output: -5
+console.log(roundToNext5(-7)) // output: -5
+console.log(roundToNext5(-12)) // output: -10
+console.log(roundToNext5(-1973307)) // output: -1973305
