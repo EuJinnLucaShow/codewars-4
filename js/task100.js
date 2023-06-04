@@ -9,3 +9,16 @@ function sayHello(name, city, state) {
   const fullName = name.join(' ')
   return `Hello, ${fullName}! Welcome to ${city}, ${state}!`
 }
+
+function setAlarm(employed, vacation) {
+  if (employed && !vacation) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(setAlarm(true, true))
+console.log(setAlarm(false, true))
+console.log(setAlarm(false, false))
+console.log(setAlarm(true, false))
